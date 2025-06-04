@@ -101,7 +101,7 @@ const About = () => {
                   <Calendar className="text-accent-600 mt-1 flex-shrink-0" size={20} />
                   <div>
                     <h4 className="font-medium text-primary-900 dark:text-white">Experience</h4>
-                    <p className="text-gray-600 dark:text-gray-300">5+ Years</p>
+                    <p className="text-gray-600 dark:text-gray-300">1 Year</p>
                   </div>
                 </div>
               </div>
