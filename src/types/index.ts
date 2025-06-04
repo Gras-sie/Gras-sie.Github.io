@@ -12,7 +12,7 @@ export interface Skill {
   id: number;
   name: string;
   icon: string;
-  category: 'frontend' | 'backend' | 'tools';
+  category: 'frontend' | 'backend' | 'database' | 'ai' | 'tools';
 }
 
 export interface SocialLink {

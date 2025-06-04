@@ -29,7 +29,7 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="mb-4 text-primary-900 dark:text-white"
             >
-              Hi, I'm {personalInfo.name}
+              Hi, I'm Marius Grasman
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -37,7 +37,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg"
             >
-              Building digital experiences that blend creativity with functionality. I specialize in creating responsive, user-friendly applications with modern web technologies.
+              I'm a Computer Science student passionate about building robust, efficient, and impactful software. I enjoy tackling real-world problems with code, exploring new technologies, and turning ideas into reality through full stack development and AI.
             </motion.p>
           </div>
           

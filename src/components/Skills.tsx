@@ -4,14 +4,15 @@ import { useInView } from 'react-intersection-observer';
 import { skills } from '../data/index';
 
 const categories = [
-  { id: 'all', label: 'All' },
   { id: 'frontend', label: 'Frontend' },
   { id: 'backend', label: 'Backend' },
-  { id: 'tools', label: 'Tools' },
+  { id: 'database', label: 'Database' },
+  { id: 'ai', label: 'AI & Data Science' },
+  { id: 'tools', label: 'Tools and Cloud' },
 ];
 
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState('frontend');
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -36,9 +37,7 @@ const Skills = () => {
     },
   };
 
-  const filteredSkills = activeCategory === 'all' 
-    ? skills 
-    : skills.filter(skill => skill.category === activeCategory);
+  const filteredSkills = skills.filter(skill => skill.category === activeCategory);
 
   return (
     <section id="skills" ref={ref} className="section">
