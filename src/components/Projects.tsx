@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, Github } from 'lucide-react';
-import { projects } from '../data';
+import { projects } from '../data/index';
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -115,7 +115,7 @@ const Projects = () => {
           
           <motion.div variants={itemVariants} className="text-center mt-12">
             <a 
-              href="https://github.com/yourusername"
+              href="https://github.com/Gras-sie"
               target="_blank"
               rel="noopener noreferrer" 
               className="btn-outline inline-flex items-center gap-2"

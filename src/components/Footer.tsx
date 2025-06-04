@@ -1,6 +1,6 @@
 import React from 'react';
-import { Code } from 'lucide-react';
-import { navLinks, socialLinks } from '../data';
+import { Code, Github, Linkedin, Mail } from 'lucide-react';
+import { navLinks, socialLinks, personalInfo } from '../data/index';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,29 +13,23 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 text-2xl font-bold mb-4">
               <Code size={28} className="text-accent-500" />
-              <span>Portfolio</span>
+              <span>Junior Developer</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Creating beautiful, functional, and user-friendly applications is my passion. 
-              I'm always looking for new challenges and opportunities to grow as a developer.
+              As an emerging developer with under a year of experience, I'm passionate about learning and building user-friendly applications. 
+              Eager to grow and take on new challenges in software development.
             </p>
             <div className="flex gap-4">
               {socialLinks.map((link) => {
-                const IconComponent = {
-                  'Github': 'Github',
-                  'Linkedin': 'Linkedin',
-                  'Twitter': 'Twitter',
-                  'Mail': 'Mail',
-                }[link.icon];
-                
-                // Import the right icon dynamically
-                const DynamicIcon = React.lazy(() => 
-                  import('lucide-react').then(mod => ({ 
-                    default: mod[IconComponent as keyof typeof import('lucide-react')] 
-                  }))
-                );
+                const IconMap = {
+                  'Github': Github,
+                  'Linkedin': Linkedin,
+                  'Mail': Mail,
+                  'LeetCode': Code, // Added LeetCode using Code icon as fallback
+                };
+                const Icon = IconMap[link.icon as keyof typeof IconMap];
 
-                return (
+                return Icon ? (
                   <a 
                     key={link.id}
                     href={link.url}
@@ -44,11 +38,9 @@ const Footer = () => {
                     className="text-gray-400 hover:text-accent-400 transition-colors"
                     aria-label={link.name}
                   >
-                    <React.Suspense fallback={<div className="w-5 h-5" />}>
-                      <DynamicIcon size={20} />
-                    </React.Suspense>
+                    <Icon size={20} />
                   </a>
-                );
+                ) : null;
               })}
             </div>
           </div>
@@ -74,15 +66,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: your.email@example.com</li>
-              <li>Phone: +1 (123) 456-7890</li>
-              <li>Location: City, Country</li>
+              <li>Email: {personalInfo.email}</li>
+              <li>Phone: {personalInfo.phone}</li>
+              <li>Location: {personalInfo.location}</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
-          <p>© {currentYear} Your Name. All rights reserved.</p>
+          <p>© {currentYear} Marius Grasman. All rights reserved.</p>
         </div>
       </div>
     </footer>

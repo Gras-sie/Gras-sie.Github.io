@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Mail, MapPin, Phone, Send } from 'lucide-react';
-import { personalInfo } from '../data';
+import { personalInfo } from '../data/index';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

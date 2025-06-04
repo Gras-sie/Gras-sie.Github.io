@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { skills } from '../data';
+import { skills } from '../data/index';
 
 const categories = [
   { id: 'all', label: 'All' },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { socialLinks, personalInfo } from '../data';
+import { ArrowRight, ArrowDown, Github, Linkedin, Mail, Code } from 'lucide-react';
+import { socialLinks, personalInfo } from '../data/index';
 
 const Hero = () => {
   return (
@@ -68,6 +68,7 @@ const Hero = () => {
                   'Github': Github,
                   'Linkedin': Linkedin,
                   'Mail': Mail,
+                  'LeetCode': Code, // Added LeetCode mapping
                 }[link.icon];
 
                 return (

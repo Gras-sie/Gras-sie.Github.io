@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { MapPin, Mail, Phone, Calendar, Download } from 'lucide-react';
-import { personalInfo } from '../data';
+import { personalInfo } from '../data/index';
 
 const About = () => {
   const [ref, inView] = useInView({

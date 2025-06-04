@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { navLinks } from '../data';
+import { navLinks } from '../data/index';
 import { Code, Menu, X, Moon, Sun } from 'lucide-react';
 
 const Navbar = () => {

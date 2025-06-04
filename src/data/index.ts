@@ -12,17 +12,23 @@ export const socialLinks: SocialLink[] = [
   { 
     id: 1, 
     name: 'GitHub', 
-    url: 'https://github.com/mariusgrasman', 
+    url: 'https://github.com/Gras-sie', 
     icon: 'Github' 
   },
   { 
     id: 2, 
     name: 'LinkedIn', 
-    url: 'https://www.linkedin.com/in/marius-grasman-b2b1b7234/', 
+    url: 'https://www.linkedin.com/in/marius-grassman-8b9859296/', 
     icon: 'Linkedin' 
   },
   { 
     id: 3, 
+    name: 'LeetCode',
+    url: 'https://leetcode.com/u/Gras-sie/',
+    icon: 'LeetCode'
+  },
+  { 
+    id: 4, 
     name: 'Email', 
     url: 'mailto:marius-jnr@outlook.com', 
     icon: 'Mail' 
