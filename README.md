@@ -2,6 +2,39 @@
 
 Welcome to my personal website. This project showcases my work, interests, and achievements in a clear and visually pleasing way.
 
+## Tech Stack
+
+- **Frontend**: React, TypeScript, Tailwind CSS, Framer Motion
+- **Build Tool**: Vite
+- **Deployment**: GitHub Pages
+- **Version Control**: Git
+
+## Getting Started
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Gras-sie/Personal-Website.git
+    cd Personal-Website
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start development server:
+    ```bash
+    npm run dev
+    ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
+
 ## Current Features
 
 - **Homepage**: A welcoming landing page with an introduction about me.
@@ -15,6 +48,22 @@ The website embraces a minimalist design with modern aesthetics:
 - **Responsive layout** for an optimal viewing experience on all devices.
 - **Clean typography** and visually balanced sections.
 - **High-quality imagery** and subtle animations to engage visitors.
+
+## Project Structure
+
+```
+src/
+  ├── components/    # React components
+  ├── data/         # Static data and content
+  ├── hooks/        # Custom React hooks
+  ├── styles/       # Global styles and Tailwind config
+  ├── types/        # TypeScript type definitions
+  └── utils/        # Helper functions and utilities
+```
+
+## Deployment
+
+The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
 ## Incoming Features
 
