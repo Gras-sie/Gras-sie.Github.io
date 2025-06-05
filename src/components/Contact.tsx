@@ -130,7 +130,7 @@ const Contact = () => {
               {/* Map or Additional Info */}
               <div className="mt-8 p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
                 <p className="text-gray-600 dark:text-gray-300">
-                  I'm currently <span className="text-accent-600 font-medium">available for freelance work</span> and open to discussing new opportunities. Let's create something amazing together!
+                  I'm currently <span className="text-accent-600 font-medium">seeking graduate opportunities and internships</span> in software development, with a particular interest in full-stack development and AI/ML projects.
                 </p>
               </div>
             </motion.div>

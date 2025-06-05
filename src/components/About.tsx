@@ -66,8 +66,12 @@ const About = () => {
               
               <div className="pt-4">
                 <a 
-                  href="#" 
+                  href="/Marius_Grassman_Resume.pdf"
                   className="btn-primary inline-flex items-center gap-2"
+                  download="Marius_Grassman_Resume.pdf"
+                  type="application/pdf"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Download CV <Download size={16} />
                 </a>

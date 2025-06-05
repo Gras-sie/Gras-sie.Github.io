@@ -4,8 +4,8 @@ export interface Project {
   description: string;
   tags: string[];
   image: string;
-  demoUrl: string;
-  codeUrl: string;
+  demoUrl?: string;
+  codeUrl?: string;
 }
 
 export interface Skill {

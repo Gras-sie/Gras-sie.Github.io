@@ -60,17 +60,19 @@ export const skills: Skill[] = [
   { id: 16, name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', category: 'database' },
   { id: 17, name: 'Apache Cassandra', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cassandra/cassandra-original.svg', category: 'database' },
 
-  // AI & Data Science
+  // AI & Data Science (ordered: frameworks, libraries, platforms, notebooks)
+  { id: 23, name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', category: 'ai' },
+  { id: 42, name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', category: 'ai' },
+  { id: 41, name: 'Keras', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg', category: 'ai' },
+  { id: 21, name: 'Scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', category: 'ai' },
   { id: 18, name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', category: 'ai' },
   { id: 19, name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', category: 'ai' },
   { id: 20, name: 'Matplotlib', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg', category: 'ai' },
-  { id: 21, name: 'Scikit-learn', icon: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg', category: 'ai' },
   { id: 22, name: 'OpenCV', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg', category: 'ai' },
-  { id: 23, name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', category: 'ai' },
   { id: 24, name: 'Jupyter', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg', category: 'ai' },
   { id: 25, name: 'Google Colab', icon: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg', category: 'ai' },
 
-  // Tools & Cloud
+  // Tools & Cloud (ordered: editors, version control, CI/CD, containers, cloud, scripting)
   { id: 26, name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg', category: 'tools' },
   { id: 27, name: 'Visual Studio', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg', category: 'tools' },
   { id: 28, name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', category: 'tools' },
@@ -80,34 +82,73 @@ export const skills: Skill[] = [
   { id: 36, name: 'Kubernetes', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', category: 'tools' },
   { id: 33, name: 'Azure', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', category: 'tools' },
   { id: 34, name: 'Amazon S3', icon: 'https://raw.githubusercontent.com/gilbarbara/logos/main/logos/aws-s3.svg', category: 'tools' },
+  { id: 31, name: 'Anaconda', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg', category: 'tools' },
   { id: 30, name: 'Bash', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg', category: 'tools' },
-  { id: 31, name: 'Anaconda', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg', category: 'tools' }
+  { id: 39, name: 'Vite', icon: 'https://vitejs.dev/logo.svg', category: 'tools' }
 ];
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 7,
     title: 'Personal Portfolio',
     description: 'A modern, responsive portfolio website built with React, TypeScript, and Tailwind CSS to showcase my projects and skills.',
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg',
-    demoUrl: 'https://gras-sie.github.io/portfolio/',
-    codeUrl: 'https://github.com/Gras-sie/Personal-Website'
+    image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+    demoUrl: 'https://gras-sie.github.io/portfolio/'
+  },
+  {
+    id: 6,
+    title: 'Dynamic Community Portal Website',
+    description: 'Interactive portal for community engagement and service access.',
+    tags: ['Node.js', 'Express.js', 'EJS', 'CSS', 'Bootstrap 5', 'Git', 'GitHub', 'Nodemon'],
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80', 
+    codeUrl: 'https://github.com/Gras-sie/Dynamic-Community-Portal-Website'
   },
   {
     id: 2,
-    title: 'Weather Dashboard',
-    description: 'A weather application that provides current conditions and forecasts using the OpenWeatherMap API.',
-    tags: ['React', 'APIs', 'Tailwind CSS'],
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg',
-    demoUrl: 'https://gras-sie.github.io/weather-dashboard/',
-    codeUrl: 'https://github.com/Gras-sie/weather-dashboard'
+    title: 'Interactive Course Website',
+    description: 'A responsive website for interactive course content and quizzes.',
+    tags: ['HTML', 'CSS', 'JavaScript', 'JSON', 'DOM Manipulation', 'Responsive Design'],
+    image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80',
+    codeUrl: 'https://github.com/Gras-sie/Interactive-Course-Website-'
+  },
+  {
+    id: 1,
+    title: 'Smart Home Automation System',
+    description: 'A system for automating home devices with scheduling, multithreading, and custom events.',
+    tags: ['C#', '.NET Core', 'Multithreading', 'Custom Events', 'Scheduled Tasks'],
+    image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
+    codeUrl: 'https://github.com/Gras-sie/Smart-Home-Automation-System-'
+  },
+  {
+    id: 3,
+    title: 'Student Performance Prediction System',
+    description: 'Predicts student performance using machine learning models.',
+    tags: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'Keras', 'Dash'],
+    image: 'https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=800&q=80',
+    codeUrl: 'https://github.com/Gras-sie/ML_student_assessment'
+  },
+  {
+    id: 4,
+    title: 'Credit Risk Assessment Model',
+    description: 'Creditworthiness classification using Random Forest and deep learning models.',
+    tags: ['Python', 'Dash', 'Random Forest', 'Deep Learning predictive model'],
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
+    codeUrl: 'https://github.com/Gras-sie/ML-Credit-Risk-Assessment'
+  },
+  {
+    id: 5,
+    title: 'Invasive Plant Detection using Machine Learning and Image Processing (Current)',
+    description: 'Detects invasive plants using Google Street View, OpenCV, and YOLOv5.',
+    tags: ['Google Street View API', 'OpenCV', 'TensorFlow', 'YOLOv5', 'QGIS'],
+    image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80',
+    codeUrl: '' // Provide link if available
   }
 ];
 
 export const personalInfo = {
   name: 'Marius Grasman',
-  title: 'Full Stack || AI & Automation Developer',
+  title: 'Junior Software Engineer',
   email: 'marius-jnr@outlook.com',
   phone: '(+27) 82 414 3629',
   location: 'Centurion, South Africa',
