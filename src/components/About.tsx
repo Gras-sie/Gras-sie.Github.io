@@ -64,12 +64,10 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="pt-4">
-                <a 
+              <div className="pt-4">                <a 
                   href="/Marius_Grassman_Resume.pdf"
                   className="btn-primary inline-flex items-center gap-2"
-                  download="Marius_Grassman_Resume.pdf"
-                  type="application/pdf"
+                  download
                   target="_blank"
                   rel="noreferrer"
                 >

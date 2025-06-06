@@ -98,8 +98,7 @@ const Hero = () => {
           <div className="relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-500 to-primary-600 rounded-xl blur-xl opacity-60 dark:opacity-40 animate-pulse"></div>
             <div className="relative bg-white dark:bg-gray-800 rounded-xl overflow-hidden aspect-square max-w-md">
-              <img
-                src="/src/assets/Reference_Image.jpg"
+              <img                src="/Reference_Image.jpg"
                 alt="Marius Grasman"
                 className="w-full h-full object-cover"
               />
