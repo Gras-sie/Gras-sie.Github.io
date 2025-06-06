@@ -65,6 +65,15 @@ src/
 
 The website is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
+## Continuous Integration
+
+This project uses [GitHub Actions](https://github.com/features/actions) for continuous integration. The CI workflow is configured to trigger on pushes and pull requests to the `main` branch. It performs these steps:
+- Checks out the code using `actions/checkout@v3`
+- Sets up Node.js (version 16) with `actions/setup-node@v3`
+- Installs dependencies with `npm ci`
+- Runs tests using `npm test`
+- Builds the project using `npm run build`
+
 ## Incoming Features
 
 Ideas and recommendations for enhancing the website in the future:
