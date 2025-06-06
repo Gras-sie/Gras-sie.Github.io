@@ -12,17 +12,20 @@ Welcome to my personal website. This project showcases my work, interests, and a
 ## Getting Started
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/Gras-sie/Personal-Website.git
     cd Personal-Website
     ```
 
 2. Install dependencies:
+
     ```bash
     npm install
     ```
 
 3. Start development server:
+
     ```bash
     npm run dev
     ```
@@ -45,6 +48,7 @@ Welcome to my personal website. This project showcases my work, interests, and a
 ## Visual & Design
 
 The website embraces a minimalist design with modern aesthetics:
+
 - **Responsive layout** for an optimal viewing experience on all devices.
 - **Clean typography** and visually balanced sections.
 - **High-quality imagery** and subtle animations to engage visitors.
@@ -68,6 +72,7 @@ The website is automatically deployed to GitHub Pages when changes are pushed to
 ## Continuous Integration
 
 This project uses [GitHub Actions](https://github.com/features/actions) for continuous integration. The CI workflow is configured to trigger on pushes and pull requests to the `main` branch. It performs these steps:
+
 - Checks out the code using `actions/checkout@v3`
 - Sets up Node.js (version 16) with `actions/setup-node@v3`
 - Installs dependencies with `npm ci`
