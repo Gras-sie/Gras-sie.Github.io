@@ -7,14 +7,12 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Ignore Node.js modules
+node_modules/
 
-# Build
-/build
-/out
+# Ignore build output directories
+dist/
+build/
 
 # Testing
 /coverage

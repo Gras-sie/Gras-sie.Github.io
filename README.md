@@ -85,6 +85,10 @@ Ideas and recommendations for enhancing the website in the future:
 - **Social Media Integration**: Seamless connectivity to my social channels for broader audience engagement.
 - **Analytics Dashboard**: Insights into visitor statistics and engagement metrics.
 
+## Future Enhancements
+
+- **Testing:** Automated testing using Vitest will be added in the future.
+
 ## Conclusion
 
 I am continually working to enhance the website's usability, design, and functionality. Stay tuned for upcoming features and improvements.
