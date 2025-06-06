@@ -1,23 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import { personalInfo } from '../data/index';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const [formStatus, setFormStatus] = useState<{
-    submitted: boolean;
-    success: boolean;
-    message: string;
-  } | null>(null);
-
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -40,34 +27,6 @@ const Contact = () => {
       opacity: 1,
       transition: { duration: 0.5 },
     },
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // In a real application, you would send the form data to a server
-    // This is just a simulation for demo purposes
-    setFormStatus({
-      submitted: true,
-      success: true,
-      message: 'Thank you! Your message has been sent successfully.',
-    });
-
-    // Reset form after successful submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
-
-    // Clear success message after 5 seconds
-    setTimeout(() => {
-      setFormStatus(null);
-    }, 5000);
   };
 
   return (
@@ -133,86 +92,6 @@ const Contact = () => {
                   I'm currently <span className="text-accent-600 font-medium">seeking graduate opportunities and internships</span> in software development, with a particular interest in full-stack development and AI/ML projects.
                 </p>
               </div>
-            </motion.div>
-
-            {/* Contact Form */}
-            <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold mb-6 text-primary-900 dark:text-white">Send a Message</h3>
-              
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-accent-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-accent-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-accent-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:ring-2 focus:ring-accent-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 resize-none"
-                  ></textarea>
-                </div>
-                
-                <button
-                  type="submit"
-                  className="btn-primary w-full mt-4 flex items-center justify-center gap-2"
-                >
-                  Send Message <Send size={16} />
-                </button>
-                
-                {formStatus && (
-                  <div className={`mt-4 p-3 rounded-md ${formStatus.success ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200' : 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200'}`}>
-                    {formStatus.message}
-                  </div>
-                )}
-              </form>
             </motion.div>
           </div>
         </motion.div>
