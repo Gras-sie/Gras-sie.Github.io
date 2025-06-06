@@ -1,6 +1,6 @@
 # Personal Website
 
-Welcome to my personal website. This project showcases my work, interests, and achievements in a clear and visually pleasing way.
+Welcome to my personal website. This project showcases my work, interests, and achievements in a clear and visually pleasing way. This sentence is apart of a pull request for a badge. Please ignore.
 
 ## Tech Stack
 
