@@ -54,7 +54,7 @@ const About = () => {
               <h3 className="text-xl font-semibold text-primary-900 dark:text-white">My Background</h3>
               <div className="space-y-4 text-gray-600 dark:text-gray-300">
                 <p>
-                  I am a passionate and driven Computer Science student at Belgium Campus ITversity, with a strong foundation in software engineering, web development, and data science. My academic journey has equipped me with hands-on experience in a variety of programming languages and frameworks, including JavaScript, TypeScript, React, Node.js, Python, and C#.
+                  I am a passionate and driven BSc(Hons) of Computing student at Belgium Campus ITversity, with a strong foundation in software engineering, web development, and data science. My academic journey has equipped me with hands-on experience in a variety of programming languages and frameworks, including JavaScript, TypeScript, React, Node.js, Python, and C#.
                 </p>
                 <p>
                   I have a keen interest in full stack development and artificial intelligence, and I enjoy building innovative solutions that solve real-world problems. My experience includes working on personal and academic projects, collaborating in teams, and continuously learning new technologies to stay ahead in the fast-evolving tech landscape.

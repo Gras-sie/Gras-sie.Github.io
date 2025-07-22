@@ -37,7 +37,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg"
             >
-              I'm a Computer Science student passionate about building robust, efficient, and impactful software. I enjoy tackling real-world problems with code, exploring new technologies, and turning ideas into reality through full stack development and AI.
+              I'm a BSc(Hons) of Computing student passionate about building robust, efficient, and impactful software. I enjoy tackling real-world problems with code, exploring new technologies, and turning ideas into reality through full stack development and AI.
             </motion.p>
           </div>
           
