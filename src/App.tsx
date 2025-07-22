@@ -7,15 +7,23 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// Add ErrorBoundary component
-class ErrorBoundary extends React.Component {
-  state = { hasError: false };
+// Add ErrorBoundary component with TypeScript types
+interface ErrorBoundaryProps {
+  children: React.ReactNode;
+}
 
-  static getDerivedStateFromError() {
+interface ErrorBoundaryState {
+  hasError: boolean;
+}
+
+class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  state: ErrorBoundaryState = { hasError: false };
+
+  static getDerivedStateFromError(): ErrorBoundaryState {
     return { hasError: true };
   }
 
-  componentDidCatch(error, errorInfo) {
+  componentDidCatch(error: Error, errorInfo: React.ErrorInfo): void {
     console.error('Error:', error, errorInfo);
   }
 
